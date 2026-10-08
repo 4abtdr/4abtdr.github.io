@@ -5,7 +5,7 @@ The redesigned website for 4 A Better Tomorrow (4abt.net), a Utah 501(c)(3) serv
 ## How it works
 
 - The whole site is one file: `index.html`. The photos and logo sit next to it.
-- It is hosted free on GitHub Pages. There is no monthly fee.
+- It is hosted free on GitHub Pages at https://4abtdr.github.io. There is no monthly fee.
 - English and Spanish live side by side. Every piece of text has its English version in the page and its Spanish version in a `data-es="..."` attribute right next to it.
 
 ## Making a simple change
@@ -27,10 +27,10 @@ Search `index.html` for `2,570` and replace it with the current Givebutter total
 1. In this repository, go to **Settings > Pages > Custom domain**, enter `4abt.net`, and save.
 2. At the domain registrar (GoDaddy), set DNS records for 4abt.net:
    - Four `A` records for `@`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   - A `CNAME` record for `www` pointing to `<github-username>.github.io`
+   - A `CNAME` record for `www` pointing to `4abtdr.github.io`
 3. Back in Settings > Pages, check **Enforce HTTPS** once it becomes available.
 4. Cancel the GoDaddy Website Builder plan. Keep the domain registration itself.
 
 ## Taking ownership
 
-This repository can be transferred to 4ABT's own GitHub account under **Settings > General > Transfer ownership**. Everything moves with it.
+The site lives in the free GitHub organization **4abtdr**. To hand it over, an owner adds the new person under **People** on github.com/4abtdr and makes them an Owner. The previous owner can then leave the organization.
