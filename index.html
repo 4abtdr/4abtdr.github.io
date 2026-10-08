@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>4 A Better Tomorrow</title>
+<meta name="description" content="4 A Better Tomorrow is a Utah 501(c)(3) bringing backpacks, school supplies, hygiene kits and hope to children in Independencia, Dominican Republic. $50 sponsors one child for a full school year.">
+<meta property="og:title" content="4 A Better Tomorrow | Sponsor a Child for $50">
+<meta property="og:description" content="$50 gives a child in the Dominican Republic a backpack full of school supplies for a year, a hygiene kit, and a new toy.">
+<meta property="og:image" content="hero.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#244B3A">
+<link rel="icon" href="mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Caveat:wght@600&display=swap">
+<style>
+/* Direction (from ChatGPT's art direction): Caribbean warmth meets modern editorial. Ivory ground, forest-green action, heritage rose accents, arched photo frames echoing the 4ABT logo. */
+:root{
+  --ivory:#FCF8F3; --peach:#F7E8DF; --forest:#244B3A; --forest-hover:#1B3A2C; --rose:#C98D8B; --leaf:#267A50; --terra:#AF7050;
+  --ink:#302B28; --ink-soft:#6A5F58; --line:#E7DDD4; --surface:#FFFFFF; --on-forest:#FCF8F3; --leaf-muted:#C9D8CB;
+  --cta:var(--forest); --cta-text:#FCF8F3;
+  --f-display:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --f-body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-hand:"Caveat","Bradley Hand","Segoe Print",cursive;
+  --max:1240px; --r:12px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ivory:#191F1B; --peach:#2A2925; --forest:#A8CEAE; --forest-hover:#C1DEC5; --rose:#D8A29D; --leaf:#83BA8C; --terra:#D9A07E;
+  --ink:#F6EEE7; --ink-soft:#C9BDB3; --line:#38362F; --surface:#22281F; --on-forest:#191F1B; --leaf-muted:#3B4A3E;
+  --cta:#A8CEAE; --cta-text:#191F1B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ivory:#191F1B; --peach:#2A2925; --forest:#A8CEAE; --forest-hover:#C1DEC5; --rose:#D8A29D; --leaf:#83BA8C; --terra:#D9A07E;
+  --ink:#F6EEE7; --ink-soft:#C9BDB3; --line:#38362F; --surface:#22281F; --on-forest:#191F1B; --leaf-muted:#3B4A3E;
+  --cta:#A8CEAE; --cta-text:#191F1B; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--f-body);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance;color:var(--ink)}
+h1{font-size:clamp(2.7rem,6.2vw,4.5rem);letter-spacing:-.01em}
+h2{font-size:clamp(2.1rem,4.4vw,3.4rem);letter-spacing:-.005em}
+h3{font-size:clamp(1.45rem,2.2vw,1.8rem)}
+p{margin:0}
+a{color:var(--forest)}
+:focus-visible{outline:3px solid var(--terra);outline-offset:3px;border-radius:6px}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.hand{font-family:var(--f-hand);font-weight:600;color:var(--rose);font-size:1.6rem;line-height:1.1}
+.lede{font-size:clamp(1.1rem,1.6vw,1.25rem);color:var(--ink-soft);max-width:56ch}
+.num{font-variant-numeric:tabular-nums}
+.green{color:var(--forest)}
+section{padding-block:clamp(64px,10vw,128px)}
+.alt{background:var(--peach)}
+.sec-head{display:grid;gap:1rem;max-width:62ch;margin-bottom:clamp(2rem,4vw,3.25rem)}
+.ico{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:50px;padding:0 1.65rem;border-radius:999px;font:600 1rem var(--f-body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.btn .ico{width:18px;height:18px;transition:transform .2s ease}
+.btn:hover .ico{transform:translate(3px,-3px)}
+.btn-primary{background:var(--cta);color:var(--cta-text)}
+.btn-primary:hover{background:var(--forest-hover)}
+.btn-outline{border-color:var(--forest);color:var(--forest);background:transparent}
+.btn-outline:hover{background:var(--surface)}
+.btn-light{background:var(--on-forest);color:var(--forest)}
+.btn-light:hover{background:var(--peach)}
+.link{font-weight:600;color:var(--forest);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1.5px}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:30;padding-top:env(safe-area-inset-top,0px);background:var(--ivory);transition:border-color .2s,box-shadow .2s;border-bottom:1px solid transparent}
+header.site.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;gap:1.5rem;min-height:76px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
+.brand .mark{width:46px;height:auto;flex:none;border-radius:8px}
+.brand b{display:block;font-family:var(--f-display);font-weight:400;font-size:1.2rem;line-height:1.05;white-space:nowrap}
+.brand span.hand{font-size:1.05rem;display:block;color:var(--terra)}
+.nav-links{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.98rem}
+.nav-links a:hover{color:var(--forest)}
+.lang{display:flex;align-items:center;gap:.15rem;font-weight:700;font-size:.85rem}
+.lang button{border:0;background:transparent;color:var(--ink-soft);font:inherit;padding:.4rem .45rem;cursor:pointer;border-radius:6px}
+.lang button[aria-pressed="true"]{color:var(--forest);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.lang i{color:var(--line);font-style:normal}
+.nav .btn{min-height:44px;padding:0 1.2rem;font-size:.95rem}
+@media (max-width:1020px){.nav-links{display:none}}
+@media (max-width:520px){.brand b{font-size:1.02rem}.brand span.hand{display:none}.nav{gap:.6rem}.nav .btn{padding:0 .95rem}}
+
+/* Hero */
+.hero{padding-block:clamp(28px,5vw,64px) clamp(64px,9vw,112px)}
+.hero-grid{display:grid;grid-template-columns:46fr 54fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero-grid>*{min-width:0}
+.hero h1 em{font-style:italic;color:var(--forest)}
+.hero .lede{margin-top:1.4rem}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:2.2rem}
+.trust{display:flex;align-items:center;gap:.55rem;margin-top:1.8rem;font-size:.92rem;color:var(--ink-soft)}
+.trust .ico{width:20px;height:20px;color:var(--leaf)}
+.arch{position:relative;isolation:isolate}
+.arch::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:999px 999px var(--r) var(--r);background:var(--rose);opacity:.55;z-index:-1}
+.arch img{width:100%;aspect-ratio:1/1.08;object-fit:cover;border-radius:999px 999px var(--r) var(--r)}
+.hero .arch img{object-position:50% 70%}
+.pill{position:absolute;left:-1.25rem;bottom:2rem;background:var(--ivory);border-radius:20px;padding:1rem 1.25rem;box-shadow:0 10px 30px rgba(48,43,40,.14);display:grid;gap:.1rem;max-width:15rem}
+.pill b{font-family:var(--f-display);font-weight:400;font-size:2.4rem;line-height:1;color:var(--forest)}
+.pill span{font-weight:600;font-size:.95rem}
+.pill small{font-size:.8rem;color:var(--ink-soft);line-height:1.35}
+@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.arch img{aspect-ratio:4/3.6;border-radius:220px 220px var(--r) var(--r)}.arch::before{border-radius:220px 220px var(--r) var(--r)}.pill{left:.75rem;bottom:.75rem}}
+
+/* $50 */
+.fifty{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.fifty>*{min-width:0}
+.fifty .big{font-family:var(--f-display);font-size:clamp(5rem,12vw,8.5rem);line-height:.9;color:var(--forest)}
+.items{list-style:none;margin:2rem 0;padding:0;display:grid;gap:1.25rem}
+.items li{display:grid;grid-template-columns:52px 1fr;gap:1rem;align-items:start}
+.items .ib{width:52px;height:52px;border-radius:50%;background:var(--ivory);display:grid;place-items:center;color:var(--forest)}
+.items b{display:block;font-size:1.1rem}
+.items span{color:var(--ink-soft);font-size:1rem}
+.photo{border-radius:var(--r);width:100%;object-fit:cover}
+.fifty .photo{aspect-ratio:3/2.1}
+.caption{font-size:.88rem;color:var(--ink-soft);margin-top:.7rem}
+@media (max-width:880px){.fifty{grid-template-columns:1fr}}
+
+/* 400 wall */
+.wall-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.wall-grid>*{min-width:0}
+.canopy{position:relative;width:100%;max-width:640px;justify-self:center}
+.canopy svg{width:100%;height:auto;display:block}
+.canopy .leaf{fill:var(--leaf-muted);transition:fill .45s ease,transform .45s ease;transform-box:fill-box;transform-origin:center}
+.canopy .leaf.on{fill:var(--leaf)}
+.canopy .leaf.you{fill:var(--terra);transform:scale(1.25)}
+.wall-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0;padding-block:1.5rem;border-block:1px solid var(--line)}
+.wall-stats b{display:block;font-family:var(--f-display);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1;color:var(--forest)}
+.wall-stats span{font-size:.88rem;color:var(--ink-soft)}
+.stepper{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;background:var(--surface)}
+.qty button{width:46px;height:46px;border:0;background:transparent;color:var(--forest);font:600 1.35rem var(--f-body);cursor:pointer;border-radius:50%}
+.qty output{min-width:2.4ch;text-align:center;font-weight:700;font-size:1.1rem}
+.note{font-size:.85rem;color:var(--ink-soft);margin-top:1rem;max-width:52ch}
+@media (max-width:880px){.wall-grid{grid-template-columns:1fr}.canopy{order:-1}}
+
+/* Pillars */
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.25rem,3vw,2.5rem)}
+.pillar{display:grid;gap:1rem;align-content:start}
+.pillar img{aspect-ratio:4/5;border-radius:var(--r);object-fit:cover;width:100%}
+.pillar .k{display:flex;align-items:center;gap:.6rem;color:var(--forest)}
+.pillar p{color:var(--ink-soft);font-size:1rem}
+.pillars .pillar:nth-child(2){margin-top:clamp(0px,5vw,4rem)}
+@media (max-width:820px){.pillars{grid-template-columns:1fr}.pillars .pillar:nth-child(2){margin-top:0}.pillar img{aspect-ratio:4/3.4}}
+
+/* Founder */
+.founder{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.founder>*{min-width:0}
+.founder .arch img{aspect-ratio:4/3.3;object-position:50% 40%}
+.founder blockquote{margin:0;font-family:var(--f-display);font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.3;color:var(--forest);border-left:3px solid var(--rose);padding-left:1.25rem}
+.story{display:grid;gap:1.25rem}
+.story p{max-width:60ch}
+@media (max-width:880px){.founder{grid-template-columns:1fr}}
+
+/* Trip */
+.trip{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.trip>*{min-width:0}
+.trip-photos{position:relative;padding-bottom:18%}
+.trip-photos .main{aspect-ratio:4/4.6;border-radius:var(--r);width:86%;object-fit:cover}
+.trip-photos .side{position:absolute;right:0;bottom:0;width:42%;aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px var(--r) var(--r);border:6px solid var(--ivory)}
+.route{list-style:none;margin:1.8rem 0;padding:0;display:grid;gap:0}
+.route li{display:grid;grid-template-columns:30px 1fr;gap:1rem;position:relative;padding-bottom:1.3rem}
+.route li::before{content:"";position:absolute;left:14px;top:30px;bottom:2px;border-left:2px dotted var(--rose)}
+.route li:last-child::before{display:none}
+.route .dot{width:30px;height:30px;border-radius:50%;border:2px solid var(--forest);display:grid;place-items:center;font:700 .8rem var(--f-body);color:var(--forest);background:var(--ivory)}
+.route b{display:block}
+.route span{color:var(--ink-soft);font-size:1rem}
+.status{display:inline-flex;gap:.5rem;align-items:center;background:var(--peach);border-radius:999px;padding:.35rem .9rem;font-size:.85rem;font-weight:600;color:var(--terra)}
+.incl{list-style:none;margin:0 0 2rem;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.5rem;font-size:1rem}
+.incl li{display:flex;gap:.55rem;align-items:flex-start}
+.incl .ico{width:20px;height:20px;color:var(--leaf);margin-top:.2rem}
+@media (max-width:880px){.trip{grid-template-columns:1fr}.incl{grid-template-columns:1fr}}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(120px,14vw,190px);gap:clamp(.6rem,1.4vw,1rem)}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.03)}
+.gallery figcaption{position:absolute;left:.75rem;bottom:.75rem;background:var(--ivory);color:var(--ink);font-size:.82rem;font-weight:500;padding:.35rem .75rem;border-radius:999px;max-width:calc(100% - 1.5rem)}
+.g1{grid-column:span 5;grid-row:span 3}.g2{grid-column:span 4;grid-row:span 2}.g3{grid-column:span 3;grid-row:span 2}
+.g4{grid-column:span 3;grid-row:span 2}.g5{grid-column:span 4;grid-row:span 2}.g6{grid-column:span 5;grid-row:span 1}
+@media (max-width:760px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px}.gallery figure{grid-column:span 1!important;grid-row:span 1!important}.gallery .g1{grid-column:span 2!important;grid-row:span 2!important}}
+
+/* Give */
+.give-banner{width:100%;aspect-ratio:21/7;object-fit:cover;object-position:50% 45%;border-radius:var(--r);margin-bottom:clamp(2rem,4vw,3rem)}
+.ways{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:clamp(1rem,2.5vw,1.75rem)}
+.way{border-radius:16px;padding:28px;display:grid;gap:.85rem;align-content:start;background:var(--ivory)}
+.alt .way{background:var(--ivory)}
+.way.primary{background:var(--forest);color:var(--on-forest)}
+.way.primary h3,.way.primary .eyebrow{color:var(--on-forest)}
+.way.primary p{color:var(--on-forest);opacity:.88}
+.way p{color:var(--ink-soft);font-size:1rem}
+.way .btn{justify-self:start;margin-top:.4rem}
+.addr{font-size:.92rem;border-top:1px solid var(--line);padding-top:.8rem;color:var(--ink)}
+@media (max-width:900px){.ways{grid-template-columns:1fr}.give-banner{aspect-ratio:16/9}}
+
+/* Closing */
+.closing{background:var(--forest);color:var(--on-forest);text-align:center}
+.closing h2{color:var(--on-forest)}
+.closing p{color:var(--on-forest);opacity:.9;margin:1rem auto 2rem;max-width:48ch}
+.closing .hand{color:var(--rose)}
+
+footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-soft)}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2rem}
+.foot>*{min-width:0}
+.foot .logo-badge{width:150px;background:#FCF8F3;border-radius:14px;padding:.6rem}
+.foot h4{margin:0 0 .8rem;font:700 .78rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.foot a{color:var(--ink-soft);text-decoration:none}
+.foot a:hover{color:var(--forest);text-decoration:underline}
+.legal{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;font-size:.85rem}
+@media (max-width:860px){.foot{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.foot{grid-template-columns:1fr}}
+
+/* Reveal */
+.reveal{transition:opacity .6s ease,transform .6s ease}
+.js .reveal.pending{opacity:0;transform:translateY(16px)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+  <symbol id="i-backpack" viewBox="0 0 24 24"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 10h8"/><path d="M8 18h8"/><path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-drops" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9.5 3 11 5 12 8c1-3 2.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+</svg>
+
+<header class="site" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="4 A Better Tomorrow, home">
+      <img class="mark" src="mark.png" alt="" width="46" height="36">
+      <span><b>4 A Better Tomorrow</b><span class="hand">para un mejor mañana</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#mission" data-es="Nuestra misión">Our Mission</a></li>
+      <li><a href="#work" data-es="Nuestro trabajo">Our Work</a></li>
+      <li><a href="#impact" data-es="Impacto">Impact</a></li>
+      <li><a href="#trip" data-es="Viaje de junio">June Trip</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" id="lang-en" aria-pressed="true" lang="en">EN</button><i>|</i><button type="button" id="lang-es" aria-pressed="false" lang="es">ES</button>
+    </div>
+    <a class="btn btn-primary" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+  </div>
+</header>
+
+<main>
+  <!-- 02 HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" data-es="Independencia, República Dominicana">Independencia, Dominican Republic</p>
+        <h1 style="margin-top:1rem" data-es="Todo niño merece un <em>mejor mañana.</em>">Every child deserves a <em>better tomorrow.</em></h1>
+        <p class="lede" data-es="En la República Dominicana, $50 ayuda a un niño a comenzar el año escolar con una mochila llena de útiles, un kit de higiene y un juguete nuevo.">In the Dominican Republic, $50 helps one child begin the school year with a backpack full of supplies, a hygiene kit, and a new toy.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span data-es="Patrocina a un niño · $50">Sponsor a Child · $50</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a class="link" href="#mission" data-es="Conoce nuestra misión">See our mission</a>
+        </div>
+        <p class="trust"><svg class="ico"><use href="#i-shield"/></svg><span data-es="Organización 501(c)(3) de Utah · Donaciones deducibles de impuestos">Utah 501(c)(3) nonprofit · Tax-deductible giving</span></p>
+      </div>
+      <div class="arch">
+        <img src="hero.jpg" alt="Children, families and volunteers gathered under a Bienvenidos banner at a 4ABT celebration" width="1500" height="1125" fetchpriority="high">
+        <div class="pill">
+          <b class="num">$50</b>
+          <span data-es="Un niño apoyado">One child supported</span>
+          <small data-es="Útiles escolares + kit de higiene + juguete">School supplies + hygiene kit + toy</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 THE $50 DIFFERENCE -->
+  <section class="alt" id="work">
+    <div class="wrap fifty">
+      <div class="reveal">
+        <p class="eyebrow" data-es="La diferencia de $50">The $50 difference</p>
+        <h2 style="margin-top:1rem" data-es="Una mochila. Un mundo de posibilidades.">One backpack. A whole lot of possibility.</h2>
+        <ul class="items">
+          <li><span class="ib"><svg class="ico"><use href="#i-book"/></svg></span><div><b data-es="Útiles escolares">School supplies</b><span data-es="Cuadernos, lápices, bolígrafos y crayones para todo el año, en su propia mochila.">Notebooks, pencils, pens and crayons for the whole year, in a backpack of their own.</span></div></li>
+          <li><span class="ib"><svg class="ico"><use href="#i-drops"/></svg></span><div><b data-es="Kit de higiene">Hygiene kit</b><span data-es="Jabón, cepillo y pasta de dientes y artículos esenciales de cuidado personal.">Soap, toothbrush, toothpaste and everyday essentials.</span></div></li>
+          <li><span class="ib"><svg class="ico"><use href="#i-gift"/></svg></span><div><b data-es="Un juguete nuevo">A brand-new toy</b><span data-es="Porque aprender también debe sentirse como una celebración.">Because learning should feel like a celebration too.</span></div></li>
+        </ul>
+        <div style="display:flex;align-items:flex-end;gap:1.5rem;flex-wrap:wrap">
+          <span class="big num">$50</span>
+          <a class="btn btn-primary" style="margin-bottom:.6rem" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span data-es="Donar $50">Give $50</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <figure class="reveal" style="margin:0">
+        <img class="photo" src="backpacks.jpg" alt="Hundreds of colorful backpacks gathered on the floor, ready for distribution" width="1500" height="960" loading="lazy">
+        <figcaption class="caption" data-es="Mochilas listas para el día de entrega.">Backpacks ready for distribution day.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 04 400 WALL -->
+  <section id="impact">
+    <div class="wrap wall-grid">
+      <div class="reveal">
+        <p class="eyebrow" data-es="La misión 2026">The 2026 mission</p>
+        <h2 style="margin-top:1rem" data-es="400 niños. 400 oportunidades.">400 children. 400 opportunities.</h2>
+        <p class="lede" style="margin-top:1.2rem" data-es="Cada hoja representa a un niño en una de 13 escuelas de la provincia Independencia. Juntos, estamos haciendo crecer un árbol.">Every leaf on this tree stands for one child in one of 13 schools across Independencia province. Together, we are growing a canopy.</p>
+        <div class="wall-stats">
+          <div><b class="num">400</b><span data-es="niños por equipar">children to equip</span></div>
+          <div><b class="num">13</b><span data-es="escuelas">schools</span></div>
+          <div><b class="num">$2,570</b><span data-es="recaudados en Givebutter">raised on Givebutter</span></div>
+        </div>
+        <div class="stepper">
+          <div class="qty" role="group" aria-label="Number of children to sponsor">
+            <button type="button" id="qminus" aria-label="One fewer">−</button>
+            <output id="qval" class="num" aria-live="polite">1</output>
+            <button type="button" id="qplus" aria-label="One more">+</button>
+          </div>
+          <a class="btn btn-primary" id="qbtn" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span id="qlabel">Sponsor 1 child · $50</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <p class="note" id="wallnote" data-es="Las hojas en terracota muestran lo que añade tu donación. El total recaudado se actualiza desde la campaña en Givebutter.">Leaves in terracotta preview what your gift adds. The amount raised comes from the Givebutter campaign.</p>
+      </div>
+      <div class="canopy reveal">
+        <svg id="canopy" viewBox="0 0 600 560" role="img" aria-labelledby="canopy-t">
+          <title id="canopy-t">A tree made of 400 leaves, one for each child in the 2026 goal</title>
+          <path d="M300 545 C296 470 292 420 300 360 M300 400 C270 370 235 350 200 340 M300 390 C330 360 370 345 410 338 M298 430 C280 410 255 398 230 392" stroke="var(--terra)" stroke-width="16" fill="none" stroke-linecap="round" opacity=".85"/>
+          <g id="leaves"></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 PILLARS -->
+  <section class="alt" id="mission">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow" data-es="Nuestros tres pilares">Our three pillars</p>
+        <h2 data-es="Comunidades más fuertes. Futuros más brillantes.">Stronger communities. Brighter futures.</h2>
+        <p class="lede" data-es="Trabajamos junto a líderes comunitarios para identificar a las familias con mayor necesidad y llevar ayuda que dura.">We work alongside community leaders to identify the families facing the greatest hardship, then bring help that lasts.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar reveal">
+          <img src="edu.jpg" alt="A smiling schoolgirl in a blue school uniform in front of a chalkboard" width="1125" height="1500" loading="lazy">
+          <div class="k"><svg class="ico"><use href="#i-book"/></svg><h3 data-es="Educación">Education</h3></div>
+          <p data-es="Útiles escolares y programas educativos para niños y sus padres, para que cada familia pueda aprender y crecer.">School supplies and learning programs for children and their parents, so whole families can learn and grow.</p>
+        </article>
+        <article class="pillar reveal">
+          <img src="health.jpg" alt="A mother seated outdoors holding her young child" width="1125" height="1500" loading="lazy">
+          <div class="k"><svg class="ico"><use href="#i-heart"/></svg><h3 data-es="Salud pública">Public Health</h3></div>
+          <p data-es="Kits de higiene, artículos de aseo y apoyo de salud básico para familias en necesidad.">Hygiene kits, toiletries and basic health support for families in need.</p>
+        </article>
+        <article class="pillar reveal">
+          <img src="elder.jpg" alt="An older man standing outside his home in Independencia" width="1125" height="1500" loading="lazy">
+          <div class="k"><svg class="ico"><use href="#i-users"/></svg><h3 data-es="Apoyo a envejecientes">Support for the Elderly</h3></div>
+          <p data-es="Cuidamos a los mayores de las comunidades que servimos, quienes muchas veces quedan olvidados.">Care for the aging neighbors in the communities we serve, who are too often forgotten.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 FOUNDER -->
+  <section>
+    <div class="wrap founder">
+      <div class="arch reveal">
+        <img src="team.jpg" alt="The 4 A Better Tomorrow volunteer team with donated school supplies" width="930" height="698" loading="lazy">
+      </div>
+      <div class="story reveal">
+        <p class="eyebrow" data-es="Nuestra historia">Our story</p>
+        <h2 data-es="Una misión con raíces en la República Dominicana.">A mission with roots in the Dominican Republic.</h2>
+        <p data-es="Nuestra fundadora, Elsa Christensen, es de la República Dominicana. Ha visto a niños caminar descalzos a la escuela, cargando sus libros en fundas plásticas porque no tienen mochila. Ha visto a estudiantes escribir en pedazos de papel con lápices rotos.">Our founder, Elsa Christensen, is from the Dominican Republic. She has watched children walk to school barefoot, carrying their books in plastic grocery bags because they have no backpack. She has seen students writing on scraps of paper with broken pencils.</p>
+        <blockquote data-es="Para estos niños, la educación es su esperanza de salir de la pobreza. Les ponemos las herramientas en las manos.">For these children, education is their way out of poverty. We put the tools in their hands.</blockquote>
+        <p data-es="Desde Utah, Elsa reunió a un equipo de voluntarios que cada año regresa a la provincia Independencia, trabajando de la mano con líderes locales para llegar a quienes más lo necesitan.">From Utah, Elsa built a team of volunteers who return to Independencia province every year, working hand in hand with local leaders to reach the children who need it most.</p>
+        <p><a class="link" href="https://vimeo.com/1054187955/3f6ec50bb8" target="_blank" rel="noopener" data-es="Mira nuestra historia en video ↗">Watch our story on video ↗</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 TRIP -->
+  <section class="alt" id="trip">
+    <div class="wrap trip">
+      <div class="trip-photos reveal">
+        <img class="main" src="trip.jpg" alt="Volunteers and local partners sharing a meal under a palm-thatched roof" width="1125" height="1500" loading="lazy">
+        <img class="side" src="coast.jpg" alt="Turquoise water along the coast of the Dominican Republic" width="1125" height="1500" loading="lazy">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow" data-es="Viaje anual de servicio">Annual service trip</p>
+        <h2 style="margin-top:1rem" data-es="Ven a ver lo que logramos juntos.">Come see what together can do.</h2>
+        <p class="lede" style="margin-top:1.2rem" data-es="Cada junio, nuestros voluntarios organizan una celebración, sirven a las familias y entregan las mochilas en persona. En el camino, viven la comida, la cultura y las playas del país.">Each June our volunteers host a celebration, serve families, and hand out the backpacks in person. Along the way, they experience the food, culture and beaches of the Dominican Republic.</p>
+        <ol class="route">
+          <li><span class="dot">1</span><div><b>Duvergé</b><span data-es="Días de servicio en las escuelas y la celebración">Service days at the schools and the celebration</span></div></li>
+          <li><span class="dot">2</span><div><b>Barahona</b><span data-es="Manantiales de agua dulce y caminata por el río">Freshwater springs and a guided river hike</span></div></li>
+          <li><span class="dot">3</span><div><b>Juan Dolio</b><span data-es="Playa y visita a un museo">Beach time and a museum visit</span></div></li>
+          <li><span class="dot">4</span><div><b data-es="Isla Saona">Saona Island</b><span data-es="Excursión en bote para cerrar el viaje">A boat excursion to close the trip</span></div></li>
+        </ol>
+        <p style="margin-bottom:1.2rem"><span class="status" data-es="2026 completado · Fechas 2027 pronto">2026 trip complete · 2027 dates coming soon</span></p>
+        <ul class="incl">
+          <li><svg class="ico"><use href="#i-check"/></svg><span data-es="Todo el transporte terrestre">All in-country ground transportation</span></li>
+          <li><svg class="ico"><use href="#i-check"/></svg><span data-es="Hospedaje en tres ciudades">Lodging in three towns</span></li>
+          <li><svg class="ico"><use href="#i-check"/></svg><span data-es="Tres comidas al día">Three meals a day</span></li>
+          <li><svg class="ico"><use href="#i-check"/></svg><span data-es="Actividades y excursiones en grupo">Group activities and excursions</span></li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center">
+          <a class="btn btn-primary" href="https://wa.me/19172265824" target="_blank" rel="noopener"><span data-es="Quiero ir en 2027">I want to go in 2027</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a class="link" href="https://drive.google.com/file/d/1JkpP4orQN_8blrcImN-fNoSbkm2oj25B/view" target="_blank" rel="noopener" data-es="Detalles del paquete ↗">Package details ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 GALLERY -->
+  <section id="moments">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow" data-es="Momentos reales">Real moments</p>
+        <h2 data-es="Así se ve un mejor mañana.">This is what a better tomorrow looks like.</h2>
+      </div>
+      <div class="gallery">
+        <figure class="g1"><img src="g-arms.jpg" alt="Children and volunteers cheering with arms raised" loading="lazy"><figcaption data-es="Día de celebración">Celebration day</figcaption></figure>
+        <figure class="g2"><img src="g-balloons.jpg" alt="Volunteers in 4ABT shirts beneath a balloon arch" loading="lazy"><figcaption data-es="Nuestros voluntarios">Our volunteers</figcaption></figure>
+        <figure class="g3"><img src="g-cup.jpg" alt="A smiling girl holding a cup at the celebration" loading="lazy"></figure>
+        <figure class="g4"><img src="g-class.jpg" alt="A volunteer helping students in a classroom library" loading="lazy"><figcaption data-es="En el aula">In the classroom</figcaption></figure>
+        <figure class="g5"><img src="g-five.jpg" alt="Five children standing together in front of a wooden fence" loading="lazy"></figure>
+        <figure class="g6"><img src="school.jpg" alt="Students in blue uniforms outside Centro Educativo Gracia Edith David Ramírez" loading="lazy" style="object-position:50% 30%"><figcaption data-es="Una de nuestras 13 escuelas">One of our 13 schools</figcaption></figure>
+      </div>
+      <p style="margin-top:1.4rem"><a class="link" href="https://www.instagram.com/4abettertomorrowdr/" target="_blank" rel="noopener" data-es="Más momentos en Instagram ↗">More moments on Instagram ↗</a></p>
+    </div>
+  </section>
+
+  <!-- 09 WAYS TO GIVE -->
+  <section class="alt" id="give">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow" data-es="Maneras de dar">Ways to give</p>
+        <h2 data-es="Hay más de una manera de hacer la diferencia.">There is more than one way to make a difference.</h2>
+      </div>
+      <img class="give-banner reveal" src="give.jpg" alt="Volunteers organizing school supplies and hygiene kits on long tables" loading="lazy">
+      <div class="ways">
+        <div class="way primary reveal">
+          <p class="eyebrow" data-es="Recomendado">Recommended</p>
+          <h3 data-es="Patrocina a un niño">Sponsor a child</h3>
+          <p data-es="$50 cubre un año escolar completo. Recibirás un recibo deducible de impuestos por correo.">$50 covers a full school year. You receive a tax-deductible receipt by email.</p>
+          <a class="btn btn-light" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span data-es="Donar con Givebutter">Give with Givebutter</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="way reveal">
+          <p class="eyebrow">Venmo</p>
+          <h3 data-es="Envía apoyo">Send support</h3>
+          <p data-es="Rápido y sencillo desde tu teléfono.">Quick and simple from your phone.</p>
+          <p class="addr num">@ForabettertomorrowDR</p>
+          <a class="btn btn-outline" href="https://account.venmo.com/u/ForabettertomorrowDR" target="_blank" rel="noopener" data-es="Abrir Venmo">Open Venmo</a>
+        </div>
+        <div class="way reveal">
+          <p class="eyebrow" data-es="Lista de Amazon">Amazon wish list</p>
+          <h3 data-es="Envía útiles">Send supplies</h3>
+          <p data-es="Elige artículos de nuestra lista. Amazon los envía a nuestro socio de envíos.">Choose items from our list. Amazon ships them to our shipping partner.</p>
+          <p class="addr"><b>Abreu Shipping Express</b><br>509 Broadway, Newark, NJ 07104</p>
+          <a class="btn btn-outline" href="https://www.amazon.com/registries/gl/guest-view/3AKNZDMRZ965X" target="_blank" rel="noopener" data-es="Ver la lista">Open the list</a>
+        </div>
+      </div>
+      <p class="reveal" style="margin-top:2rem;color:var(--ink-soft);max-width:60ch" data-es="¿Quieres dar tu tiempo? Buscamos voluntarios para eventos, recaudación de fondos, logística, administración y redes sociales. No necesitas experiencia, solo un corazón dispuesto. <a class='link' href='mailto:4abtdr@gmail.com'>4abtdr@gmail.com</a>">Want to give your time? We welcome help with events, fundraising, logistics, admin and social media. No special skills needed, just a willing heart. <a class="link" href="mailto:4abtdr@gmail.com">4abtdr@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- 10 CLOSING -->
+  <section class="closing">
+    <div class="wrap">
+      <p class="hand" data-es="para un mejor mañana">para un mejor mañana</p>
+      <h2 style="margin-top:.6rem" data-es="El próximo capítulo comienza contigo.">The next chapter begins with you.</h2>
+      <p data-es="Una mochila. Un año escolar. Un niño que llega a clase listo para aprender.">One backpack. One school year. One child who walks into class ready to learn.</p>
+      <a class="btn btn-light" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span data-es="Patrocina a un niño">Sponsor a Child</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img class="logo-badge" src="logo.png" alt="4 A Better Tomorrow, para un mejor mañana" width="150" height="155" loading="lazy">
+        <p style="margin-top:1rem;max-width:34ch" data-es="Llevando educación, salud y esperanza a niños y familias de la provincia Independencia, República Dominicana.">Bringing education, health and hope to children and families in Independencia province, Dominican Republic.</p>
+      </div>
+      <div>
+        <h4 data-es="Explora">Explore</h4>
+        <ul>
+          <li><a href="#mission" data-es="Nuestra misión">Our Mission</a></li>
+          <li><a href="#work" data-es="Nuestro trabajo">Our Work</a></li>
+          <li><a href="#impact" data-es="Impacto">Impact</a></li>
+          <li><a href="#trip" data-es="Viaje de junio">June Trip</a></li>
+          <li><a href="#give" data-es="Maneras de dar">Ways to Give</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-es="Contacto">Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/19172265824" target="_blank" rel="noopener">WhatsApp +1 (917) 226-5824</a></li>
+          <li><a href="mailto:4abtdr@gmail.com">4abtdr@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/4abettertomorrowdr/" target="_blank" rel="noopener">Instagram @4abettertomorrowdr</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-es="Dona">Give</h4>
+        <ul>
+          <li><a href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener">Givebutter</a></li>
+          <li><a href="https://account.venmo.com/u/ForabettertomorrowDR" target="_blank" rel="noopener">Venmo</a></li>
+          <li><a href="https://www.amazon.com/registries/gl/guest-view/3AKNZDMRZ965X" target="_blank" rel="noopener" data-es="Lista de Amazon">Amazon Wish List</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p data-es="4 A Better Tomorrow es una corporación sin fines de lucro de Utah, exenta del impuesto federal sobre la renta bajo la Sección 501(c)(3) del Código de Rentas Internas. EIN 93-2408436.">4 A Better Tomorrow is a Utah nonprofit corporation exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code. EIN 93-2408436.</p>
+      <p class="num">© 2023–2026 4 A Better Tomorrow</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var lang='en';
+  var nodes=[].slice.call(document.querySelectorAll('[data-es]'));
+  nodes.forEach(function(n){n.setAttribute('data-en',n.innerHTML)});
+
+  /* Canopy: 400 leaves arranged in a rounded crown */
+  var g=document.getElementById('leaves'),NS='http://www.w3.org/2000/svg',leaves=[];
+  var seed=7;function rnd(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}
+  var pts=[],tries=0;
+  while(pts.length<400&&tries<40000){tries++;
+    var x=40+rnd()*520,y=20+rnd()*360;
+    var dx=(x-300)/260,dy=(y-205)/185, d=dx*dx+dy*dy;
+    var lobe=Math.min(d,((x-175)/150)*((x-175)/150)+((y-250)/120)*((y-250)/120),((x-425)/150)*((x-425)/150)+((y-250)/120)*((y-250)/120));
+    if(lobe>1)continue;
+    var ok=true;for(var i=0;i<pts.length;i++){var ex=pts[i][0]-x,ey=pts[i][1]-y;if(ex*ex+ey*ey<15.5*15.5){ok=false;break}}
+    if(ok)pts.push([x,y]);
+  }
+  pts.sort(function(a,b){return (b[1]-a[1])||(a[0]-b[0])});
+  pts.forEach(function(p,i){
+    var a=Math.round(rnd()*360);
+    var wrap=document.createElementNS(NS,'g');
+    wrap.setAttribute('transform','translate('+p[0].toFixed(1)+' '+p[1].toFixed(1)+') rotate('+a+')');
+    var el=document.createElementNS(NS,'path');
+    el.setAttribute('d','M0 -9 C6 -6 6 6 0 9 C-6 6 -6 -6 0 -9Z');
+    el.setAttribute('class','leaf');
+    wrap.appendChild(el);g.appendChild(wrap);leaves.push(el);
+  });
+  var total=leaves.length;
+
+  /* Stepper previews the leaves a gift adds */
+  var q=1;
+  function paint(){
+    leaves.forEach(function(l,i){l.classList.toggle('you',i<q)});
+    document.getElementById('qval').textContent=q;
+    var amt='$'+(q*50).toLocaleString('en-US');
+    document.getElementById('qlabel').textContent=lang==='es'
+      ?'Patrocina '+q+' '+(q===1?'niño':'niños')+' · '+amt
+      :'Sponsor '+q+' '+(q===1?'child':'children')+' · '+amt;
+  }
+  document.getElementById('qminus').onclick=function(){q=Math.max(1,q-1);paint()};
+  document.getElementById('qplus').onclick=function(){q=Math.min(40,q+1);paint()};
+
+  /* Language */
+  function setLang(l){
+    lang=l;
+    nodes.forEach(function(n){n.innerHTML=n.getAttribute(l==='es'?'data-es':'data-en')});
+    document.documentElement.lang=l;
+    document.getElementById('lang-en').setAttribute('aria-pressed',String(l==='en'));
+    document.getElementById('lang-es').setAttribute('aria-pressed',String(l==='es'));
+    paint();
+    try{localStorage.setItem('4abt-lang',l)}catch(e){}
+  }
+  document.getElementById('lang-en').onclick=function(){setLang('en')};
+  document.getElementById('lang-es').onclick=function(){setLang('es')};
+  var saved=null;try{saved=localStorage.getItem('4abt-lang')}catch(e){}
+  if(!saved&&/^es/i.test(navigator.language||''))saved='es';
+  setLang(saved==='es'?'es':'en');
+
+  /* Header border on scroll */
+  var hdr=document.querySelector('header.site');
+  window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',window.scrollY>8)},{passive:true});
+
+  /* Gentle reveal; content is visible without JS or observer support */
+  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var rs=[].slice.call(document.querySelectorAll('.reveal'));
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pending');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    rs.forEach(function(r){var b=r.getBoundingClientRect();if(b.top>innerHeight){r.classList.add('pending');io.observe(r)}});
+  }
+})();
+</script>
+</body>
+</html>
