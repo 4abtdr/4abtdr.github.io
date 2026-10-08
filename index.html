@@ -10,6 +10,7 @@
 <meta property="og:image" content="https://4abtdr.github.io/g-arms.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#244B3A">
+<meta name="color-scheme" content="light only">
 <link rel="icon" href="mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 <style>
 /* Direction (from ChatGPT's art direction): Caribbean warmth meets modern editorial. Ivory ground, forest-green action, heritage rose accents, arched photo frames echoing the 4ABT logo. */
 :root{
-  --ivory:#FCF8F3; --peach:#F7E8DF; --forest:#244B3A; --forest-hover:#1B3A2C; --rose:#C98D8B; --leaf:#267A50; --terra:#AF7050;
+  --ivory:#FFFDF9; --peach:#F7E8DF; --forest:#244B3A; --forest-hover:#1B3A2C; --rose:#C98D8B; --leaf:#267A50; --terra:#AF7050;
   --ink:#302B28; --ink-soft:#6A5F58; --line:#E7DDD4; --surface:#FFFFFF; --on-forest:#FCF8F3; --leaf-muted:#C9D8CB;
   --cta:var(--forest); --cta-text:#FCF8F3;
   --f-display:"DM Serif Display",Georgia,"Times New Roman",serif;
@@ -26,15 +27,6 @@
   --max:1240px; --r:12px;
   color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ivory:#191F1B; --peach:#2A2925; --forest:#A8CEAE; --forest-hover:#C1DEC5; --rose:#D8A29D; --leaf:#83BA8C; --terra:#D9A07E;
-  --ink:#F6EEE7; --ink-soft:#C9BDB3; --line:#38362F; --surface:#22281F; --on-forest:#191F1B; --leaf-muted:#3B4A3E;
-  --cta:#A8CEAE; --cta-text:#191F1B; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --ivory:#191F1B; --peach:#2A2925; --forest:#A8CEAE; --forest-hover:#C1DEC5; --rose:#D8A29D; --leaf:#83BA8C; --terra:#D9A07E;
-  --ink:#F6EEE7; --ink-soft:#C9BDB3; --line:#38362F; --surface:#22281F; --on-forest:#191F1B; --leaf-muted:#3B4A3E;
-  --cta:#A8CEAE; --cta-text:#191F1B; color-scheme:dark}
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
