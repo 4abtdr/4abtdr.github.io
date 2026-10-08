@@ -7,7 +7,7 @@
 <meta name="description" content="4 A Better Tomorrow is a Utah 501(c)(3) bringing backpacks, school supplies, hygiene kits and hope to children in Independencia, Dominican Republic. $50 sponsors one child for a full school year.">
 <meta property="og:title" content="4 A Better Tomorrow | Sponsor a Child for $50">
 <meta property="og:description" content="$50 gives a child in the Dominican Republic a backpack full of school supplies for a year, a hygiene kit, and a new toy.">
-<meta property="og:image" content="hero.jpg">
+<meta property="og:image" content="https://4abtdr.github.io/g-arms.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#244B3A">
 <link rel="icon" href="mark.png">
@@ -91,21 +91,22 @@ header.site.scrolled{border-bottom-color:var(--line)}
 
 /* Hero */
 .hero{padding-block:clamp(28px,5vw,64px) clamp(64px,9vw,112px)}
-.hero-grid{display:grid;grid-template-columns:46fr 54fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,4rem);align-items:end}
 .hero-grid>*{min-width:0}
 .hero h1 em{font-style:italic;color:var(--forest)}
-.hero .lede{margin-top:1.4rem}
-.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:2.2rem}
-.trust{display:flex;align-items:center;gap:.55rem;margin-top:1.8rem;font-size:.92rem;color:var(--ink-soft)}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:1.8rem}
+.trust{display:flex;align-items:center;gap:.55rem;margin-top:1.4rem;font-size:.92rem;color:var(--ink-soft)}
 .trust .ico{width:20px;height:20px;color:var(--leaf)}
-.arch{position:relative;isolation:isolate;padding-top:clamp(36px,9%,84px)}
-.arch::before{content:"";position:absolute;inset:0 -14px -14px 14px;border-radius:999px 999px var(--r) var(--r);background:var(--rose);opacity:.45;z-index:-1}
+.hero-photo{position:relative;margin-top:clamp(2rem,4vw,3rem)}
+.hero-photo img{width:100%;border-radius:20px;box-shadow:0 20px 50px rgba(48,43,40,.18)}
+.arch{position:relative}
 .arch img{width:100%;border-radius:16px}
-.pill{position:absolute;left:-1.25rem;bottom:2rem;background:var(--ivory);border-radius:20px;padding:1rem 1.25rem;box-shadow:0 10px 30px rgba(48,43,40,.14);display:grid;gap:.1rem;max-width:15rem}
-.pill b{font-family:var(--f-display);font-weight:400;font-size:2.4rem;line-height:1;color:var(--forest)}
+.pill{position:absolute;left:clamp(.75rem,2vw,1.5rem);bottom:clamp(.75rem,2vw,1.5rem);background:var(--ivory);border-radius:18px;padding:.9rem 1.15rem;box-shadow:0 10px 30px rgba(48,43,40,.18);display:grid;gap:.1rem;max-width:15rem}
+.pill b{font-family:var(--f-display);font-weight:400;font-size:2.2rem;line-height:1;color:var(--forest)}
 .pill span{font-weight:600;font-size:.95rem}
 .pill small{font-size:.8rem;color:var(--ink-soft);line-height:1.35}
-@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.arch::before{inset:0 -8px -8px 8px}.pill{left:.75rem;bottom:.75rem;position:absolute}}
+@media (max-width:880px){.hero-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.pill{position:static;margin-top:.9rem;max-width:none;box-shadow:none;background:var(--peach)}}
 
 /* $50 */
 .fifty{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
@@ -161,7 +162,7 @@ header.site.scrolled{border-bottom-color:var(--line)}
 .trip>*{min-width:0}
 .trip-photos{position:relative;padding-bottom:12%}
 .trip-photos .main{border-radius:var(--r);width:78%}
-.trip-photos .side{position:absolute;right:0;bottom:0;width:40%;border-radius:999px 999px var(--r) var(--r);border:6px solid var(--peach)}
+.trip-photos .side{position:absolute;right:0;bottom:0;width:40%;border-radius:var(--r);border:6px solid var(--peach)}
 .route{list-style:none;margin:1.8rem 0;padding:0;display:grid;gap:0}
 .route li{display:grid;grid-template-columns:30px 1fr;gap:1rem;position:relative;padding-bottom:1.3rem}
 .route li::before{content:"";position:absolute;left:14px;top:30px;bottom:2px;border-left:2px dotted var(--rose)}
@@ -261,19 +262,23 @@ footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-
 <main>
   <!-- 02 HERO -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow" data-es="Independencia, República Dominicana">Independencia, Dominican Republic</p>
-        <h1 style="margin-top:1rem" data-es="Todo niño merece un <em>mejor mañana.</em>">Every child deserves a <em>better tomorrow.</em></h1>
-        <p class="lede" data-es="En la República Dominicana, $50 ayuda a un niño a comenzar el año escolar con una mochila llena de útiles, un kit de higiene y un juguete nuevo.">In the Dominican Republic, $50 helps one child begin the school year with a backpack full of supplies, a hygiene kit, and a new toy.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span data-es="Patrocina a un niño · $50">Sponsor a Child · $50</span><svg class="ico"><use href="#i-arrow"/></svg></a>
-          <a class="link" href="#mission" data-es="Conoce nuestra misión">See our mission</a>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow" data-es="Independencia, República Dominicana">Independencia, Dominican Republic</p>
+          <h1 style="margin-top:1rem" data-es="Todo niño merece un <em>mejor mañana.</em>">Every child deserves a <em>better tomorrow.</em></h1>
         </div>
-        <p class="trust"><svg class="ico"><use href="#i-shield"/></svg><span data-es="Organización 501(c)(3) de Utah · Donaciones deducibles de impuestos">Utah 501(c)(3) nonprofit · Tax-deductible giving</span></p>
+        <div>
+          <p class="lede" data-es="En la República Dominicana, $50 ayuda a un niño a comenzar el año escolar con una mochila llena de útiles, un kit de higiene y un juguete nuevo.">In the Dominican Republic, $50 helps one child begin the school year with a backpack full of supplies, a hygiene kit, and a new toy.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://givebutter.com/sponsor-a-child-give-hope-3-5yqddj" target="_blank" rel="noopener"><span data-es="Patrocina a un niño · $50">Sponsor a Child · $50</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="link" href="#mission" data-es="Conoce nuestra misión">See our mission</a>
+          </div>
+          <p class="trust"><svg class="ico"><use href="#i-shield"/></svg><span data-es="Organización 501(c)(3) de Utah · Donaciones deducibles de impuestos">Utah 501(c)(3) nonprofit · Tax-deductible giving</span></p>
+        </div>
       </div>
-      <div class="arch">
-        <img src="hero.jpg" alt="Children, families and volunteers gathered under a Bienvenidos banner at a 4ABT celebration" width="1500" height="1125" fetchpriority="high">
+      <div class="hero-photo">
+        <img src="g-arms.jpg" alt="Children and 4ABT volunteers cheering together with their hands raised at a celebration in the Dominican Republic" width="1170" height="780" fetchpriority="high">
         <div class="pill">
           <b class="num">$50</b>
           <span data-es="Un niño apoyado">One child supported</span>
@@ -423,7 +428,7 @@ footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-
         <h2 data-es="Así se ve un mejor mañana.">This is what a better tomorrow looks like.</h2>
       </div>
       <div class="gallery">
-        <figure><img src="g-arms.jpg" width="1170" height="780" alt="Children and volunteers cheering with arms raised" loading="lazy"><figcaption data-es="Día de celebración">Celebration day</figcaption></figure>
+        <figure><img src="hero.jpg" width="1500" height="1125" alt="Children, families and volunteers gathered under a Bienvenidos banner" loading="lazy"><figcaption data-es="¡Bienvenidos!">¡Bienvenidos!</figcaption></figure>
         <figure><img src="g-balloons.jpg" width="1412" height="1500" alt="Volunteers in 4ABT shirts beneath a balloon arch" loading="lazy"><figcaption data-es="Nuestros voluntarios">Our volunteers</figcaption></figure>
         <figure><img src="g-cup.jpg" width="1125" height="1500" alt="A smiling girl holding a cup at the celebration" loading="lazy"></figure>
         <figure><img src="g-class.jpg" width="1125" height="1500" alt="A volunteer helping students in a classroom library" loading="lazy"><figcaption data-es="En el aula">In the classroom</figcaption></figure>
