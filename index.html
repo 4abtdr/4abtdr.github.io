@@ -98,15 +98,14 @@ header.site.scrolled{border-bottom-color:var(--line)}
 .hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:2.2rem}
 .trust{display:flex;align-items:center;gap:.55rem;margin-top:1.8rem;font-size:.92rem;color:var(--ink-soft)}
 .trust .ico{width:20px;height:20px;color:var(--leaf)}
-.arch{position:relative;isolation:isolate}
-.arch::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:999px 999px var(--r) var(--r);background:var(--rose);opacity:.55;z-index:-1}
-.arch img{width:100%;aspect-ratio:1/1.08;object-fit:cover;border-radius:999px 999px var(--r) var(--r)}
-.hero .arch img{object-position:50% 70%}
+.arch{position:relative;isolation:isolate;padding-top:clamp(36px,9%,84px)}
+.arch::before{content:"";position:absolute;inset:0 -14px -14px 14px;border-radius:999px 999px var(--r) var(--r);background:var(--rose);opacity:.45;z-index:-1}
+.arch img{width:100%;border-radius:16px}
 .pill{position:absolute;left:-1.25rem;bottom:2rem;background:var(--ivory);border-radius:20px;padding:1rem 1.25rem;box-shadow:0 10px 30px rgba(48,43,40,.14);display:grid;gap:.1rem;max-width:15rem}
 .pill b{font-family:var(--f-display);font-weight:400;font-size:2.4rem;line-height:1;color:var(--forest)}
 .pill span{font-weight:600;font-size:.95rem}
 .pill small{font-size:.8rem;color:var(--ink-soft);line-height:1.35}
-@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.arch img{aspect-ratio:4/3.6;border-radius:220px 220px var(--r) var(--r)}.arch::before{border-radius:220px 220px var(--r) var(--r)}.pill{left:.75rem;bottom:.75rem}}
+@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.arch::before{inset:0 -8px -8px 8px}.pill{left:.75rem;bottom:.75rem;position:absolute}}
 
 /* $50 */
 .fifty{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
@@ -117,8 +116,7 @@ header.site.scrolled{border-bottom-color:var(--line)}
 .items .ib{width:52px;height:52px;border-radius:50%;background:var(--ivory);display:grid;place-items:center;color:var(--forest)}
 .items b{display:block;font-size:1.1rem}
 .items span{color:var(--ink-soft);font-size:1rem}
-.photo{border-radius:var(--r);width:100%;object-fit:cover}
-.fifty .photo{aspect-ratio:3/2.1}
+.photo{border-radius:var(--r);width:100%}
 .caption{font-size:.88rem;color:var(--ink-soft);margin-top:.7rem}
 @media (max-width:880px){.fifty{grid-template-columns:1fr}}
 
@@ -143,16 +141,16 @@ header.site.scrolled{border-bottom-color:var(--line)}
 /* Pillars */
 .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.25rem,3vw,2.5rem)}
 .pillar{display:grid;gap:1rem;align-content:start}
-.pillar img{aspect-ratio:4/5;border-radius:var(--r);object-fit:cover;width:100%}
+.pillar img{border-radius:var(--r);width:100%}
 .pillar .k{display:flex;align-items:center;gap:.6rem;color:var(--forest)}
 .pillar p{color:var(--ink-soft);font-size:1rem}
 .pillars .pillar:nth-child(2){margin-top:clamp(0px,5vw,4rem)}
-@media (max-width:820px){.pillars{grid-template-columns:1fr}.pillars .pillar:nth-child(2){margin-top:0}.pillar img{aspect-ratio:4/3.4}}
+@media (max-width:820px){.pillars{grid-template-columns:1fr}.pillars .pillar:nth-child(2){margin-top:0}}
 
 /* Founder */
-.founder{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
 .founder>*{min-width:0}
-.founder .arch img{aspect-ratio:4/3.3;object-position:50% 40%}
+.founder .arch{max-width:460px;justify-self:center;width:100%}
 .founder blockquote{margin:0;font-family:var(--f-display);font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.3;color:var(--forest);border-left:3px solid var(--rose);padding-left:1.25rem}
 .story{display:grid;gap:1.25rem}
 .story p{max-width:60ch}
@@ -161,9 +159,9 @@ header.site.scrolled{border-bottom-color:var(--line)}
 /* Trip */
 .trip{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
 .trip>*{min-width:0}
-.trip-photos{position:relative;padding-bottom:18%}
-.trip-photos .main{aspect-ratio:4/4.6;border-radius:var(--r);width:86%;object-fit:cover}
-.trip-photos .side{position:absolute;right:0;bottom:0;width:42%;aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px var(--r) var(--r);border:6px solid var(--ivory)}
+.trip-photos{position:relative;padding-bottom:12%}
+.trip-photos .main{border-radius:var(--r);width:78%}
+.trip-photos .side{position:absolute;right:0;bottom:0;width:40%;border-radius:999px 999px var(--r) var(--r);border:6px solid var(--peach)}
 .route{list-style:none;margin:1.8rem 0;padding:0;display:grid;gap:0}
 .route li{display:grid;grid-template-columns:30px 1fr;gap:1rem;position:relative;padding-bottom:1.3rem}
 .route li::before{content:"";position:absolute;left:14px;top:30px;bottom:2px;border-left:2px dotted var(--rose)}
@@ -178,18 +176,20 @@ header.site.scrolled{border-bottom-color:var(--line)}
 @media (max-width:880px){.trip{grid-template-columns:1fr}.incl{grid-template-columns:1fr}}
 
 /* Gallery */
-.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(120px,14vw,190px);gap:clamp(.6rem,1.4vw,1rem)}
-.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r)}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery{columns:3;column-gap:clamp(.6rem,1.4vw,1rem)}
+.gallery figure{margin:0 0 clamp(.6rem,1.4vw,1rem);position:relative;overflow:hidden;border-radius:var(--r);break-inside:avoid}
+.gallery img{width:100%;transition:transform .6s ease}
 .gallery figure:hover img{transform:scale(1.03)}
 .gallery figcaption{position:absolute;left:.75rem;bottom:.75rem;background:var(--ivory);color:var(--ink);font-size:.82rem;font-weight:500;padding:.35rem .75rem;border-radius:999px;max-width:calc(100% - 1.5rem)}
-.g1{grid-column:span 5;grid-row:span 3}.g2{grid-column:span 4;grid-row:span 2}.g3{grid-column:span 3;grid-row:span 2}
-.g4{grid-column:span 3;grid-row:span 2}.g5{grid-column:span 4;grid-row:span 2}.g6{grid-column:span 5;grid-row:span 1}
-@media (max-width:760px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px}.gallery figure{grid-column:span 1!important;grid-row:span 1!important}.gallery .g1{grid-column:span 2!important;grid-row:span 2!important}}
+@media (max-width:760px){.gallery{columns:2}}
+@media (max-width:420px){.gallery{columns:1}}
 
 /* Give */
-.give-banner{width:100%;aspect-ratio:21/7;object-fit:cover;object-position:50% 45%;border-radius:var(--r);margin-bottom:clamp(2rem,4vw,3rem)}
-.ways{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:clamp(1rem,2.5vw,1.75rem)}
+.give-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,3vw,2.5rem);align-items:start}
+.give-grid>*{min-width:0}
+.give-banner{width:100%;border-radius:var(--r)}
+.ways{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.5vw,1.5rem)}
+.ways .primary{grid-column:1/-1}
 .way{border-radius:16px;padding:28px;display:grid;gap:.85rem;align-content:start;background:var(--ivory)}
 .alt .way{background:var(--ivory)}
 .way.primary{background:var(--forest);color:var(--on-forest)}
@@ -198,7 +198,8 @@ header.site.scrolled{border-bottom-color:var(--line)}
 .way p{color:var(--ink-soft);font-size:1rem}
 .way .btn{justify-self:start;margin-top:.4rem}
 .addr{font-size:.92rem;border-top:1px solid var(--line);padding-top:.8rem;color:var(--ink)}
-@media (max-width:900px){.ways{grid-template-columns:1fr}.give-banner{aspect-ratio:16/9}}
+@media (max-width:900px){.give-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.ways{grid-template-columns:1fr}}
 
 /* Closing */
 .closing{background:var(--forest);color:var(--on-forest);text-align:center}
@@ -369,7 +370,7 @@ footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-
   <section>
     <div class="wrap founder">
       <div class="arch reveal">
-        <img src="team.jpg" alt="The 4 A Better Tomorrow volunteer team with donated school supplies" width="930" height="698" loading="lazy">
+        <img src="elsa.jpg" alt="Elsa Christensen, founder of 4 A Better Tomorrow, in a classroom in the Dominican Republic" width="720" height="1008" loading="lazy">
       </div>
       <div class="story reveal">
         <p class="eyebrow" data-es="Nuestra historia">Our story</p>
@@ -422,12 +423,13 @@ footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-
         <h2 data-es="Así se ve un mejor mañana.">This is what a better tomorrow looks like.</h2>
       </div>
       <div class="gallery">
-        <figure class="g1"><img src="g-arms.jpg" alt="Children and volunteers cheering with arms raised" loading="lazy"><figcaption data-es="Día de celebración">Celebration day</figcaption></figure>
-        <figure class="g2"><img src="g-balloons.jpg" alt="Volunteers in 4ABT shirts beneath a balloon arch" loading="lazy"><figcaption data-es="Nuestros voluntarios">Our volunteers</figcaption></figure>
-        <figure class="g3"><img src="g-cup.jpg" alt="A smiling girl holding a cup at the celebration" loading="lazy"></figure>
-        <figure class="g4"><img src="g-class.jpg" alt="A volunteer helping students in a classroom library" loading="lazy"><figcaption data-es="En el aula">In the classroom</figcaption></figure>
-        <figure class="g5"><img src="g-five.jpg" alt="Five children standing together in front of a wooden fence" loading="lazy"></figure>
-        <figure class="g6"><img src="school.jpg" alt="Students in blue uniforms outside Centro Educativo Gracia Edith David Ramírez" loading="lazy" style="object-position:50% 30%"><figcaption data-es="Una de nuestras 13 escuelas">One of our 13 schools</figcaption></figure>
+        <figure><img src="g-arms.jpg" width="1170" height="780" alt="Children and volunteers cheering with arms raised" loading="lazy"><figcaption data-es="Día de celebración">Celebration day</figcaption></figure>
+        <figure><img src="g-balloons.jpg" width="1412" height="1500" alt="Volunteers in 4ABT shirts beneath a balloon arch" loading="lazy"><figcaption data-es="Nuestros voluntarios">Our volunteers</figcaption></figure>
+        <figure><img src="g-cup.jpg" width="1125" height="1500" alt="A smiling girl holding a cup at the celebration" loading="lazy"></figure>
+        <figure><img src="g-class.jpg" width="1125" height="1500" alt="A volunteer helping students in a classroom library" loading="lazy"><figcaption data-es="En el aula">In the classroom</figcaption></figure>
+        <figure><img src="g-five.jpg" width="1500" height="1083" alt="Five children standing together in front of a wooden fence" loading="lazy"></figure>
+        <figure><img src="school.jpg" width="1125" height="1500" alt="Students in blue uniforms outside Centro Educativo Gracia Edith David Ramírez"loading="lazy"><figcaption data-es="Una de nuestras 13 escuelas">One of our 13 schools</figcaption></figure>
+        <figure><img src="team.jpg" width="930" height="698" alt="The 4 A Better Tomorrow volunteer team with donated school supplies" loading="lazy"><figcaption data-es="El equipo de 4ABT">The 4ABT team</figcaption></figure>
       </div>
       <p style="margin-top:1.4rem"><a class="link" href="https://www.instagram.com/4abettertomorrowdr/" target="_blank" rel="noopener" data-es="Más momentos en Instagram ↗">More moments on Instagram ↗</a></p>
     </div>
@@ -440,7 +442,8 @@ footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-
         <p class="eyebrow" data-es="Maneras de dar">Ways to give</p>
         <h2 data-es="Hay más de una manera de hacer la diferencia.">There is more than one way to make a difference.</h2>
       </div>
-      <img class="give-banner reveal" src="give.jpg" alt="Volunteers organizing school supplies and hygiene kits on long tables" loading="lazy">
+      <div class="give-grid">
+      <img class="give-banner reveal" src="give.jpg" alt="Volunteers organizing school supplies and hygiene kits on long tables" width="1263" height="1500" loading="lazy">
       <div class="ways">
         <div class="way primary reveal">
           <p class="eyebrow" data-es="Recomendado">Recommended</p>
@@ -462,6 +465,7 @@ footer{padding-block:clamp(48px,7vw,80px) 32px;font-size:.95rem;color:var(--ink-
           <p class="addr"><b>Abreu Shipping Express</b><br>509 Broadway, Newark, NJ 07104</p>
           <a class="btn btn-outline" href="https://www.amazon.com/registries/gl/guest-view/3AKNZDMRZ965X" target="_blank" rel="noopener" data-es="Ver la lista">Open the list</a>
         </div>
+      </div>
       </div>
       <p class="reveal" style="margin-top:2rem;color:var(--ink-soft);max-width:60ch" data-es="¿Quieres dar tu tiempo? Buscamos voluntarios para eventos, recaudación de fondos, logística, administración y redes sociales. No necesitas experiencia, solo un corazón dispuesto. <a class='link' href='mailto:4abtdr@gmail.com'>4abtdr@gmail.com</a>">Want to give your time? We welcome help with events, fundraising, logistics, admin and social media. No special skills needed, just a willing heart. <a class="link" href="mailto:4abtdr@gmail.com">4abtdr@gmail.com</a></p>
     </div>
